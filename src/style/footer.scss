@@ -1,0 +1,40 @@
+html {
+    font-family: 'Oxygen', sans-serif;
+}
+body {
+    margin: 0px;
+}
+.footer {
+    background: #415068;
+}
+.footer a {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+    background: #415068;
+    color: white;
+}
+.footer a {
+    text-decoration: none;
+}
+@media (min-width: 48em) {
+    .footer span {
+        margin-left: 20px;
+        color:white;
+        display: flex;
+        align-items: center;
+    }
+    .footer  {
+        display: flex;
+        align-content: center;
+    }
+    .links {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end;
+
+        a { margin-right: 20px;
+        }
+    }
+}
