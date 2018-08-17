@@ -1,0 +1,133 @@
+.SearchBar {
+  width: 600px;
+  height: 56px;
+  margin-left: 60px;
+  border-radius: 32px;
+}
+.SearchBar input {
+  padding-left: 16px;
+  margin-left: 40px;
+}
+.About {
+  margin: 24px;
+  padding: 8px;
+  width: 450px;
+}
+a {
+  margin: 24px;
+  width: 300px;
+}
+
+.TopBar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 60px;
+  top: 0;
+}
+.TopBar div {
+  margin-right: 20px;
+  color: lightgray;
+}
+.TopBar div:hover {
+  color: #1d2c55;
+}
+
+.About {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #1d2c55;
+}
+
+.FAQS {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1d2c55;
+}
+
+.ATOPLINE {
+  margin-top: 10px;
+  color: #1d2c55;
+}
+
+.FTOPLINE {
+  margin-top: 10px;
+  color: #1d2c55;
+}
+
+.ContactUs {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 200px;
+  color: #1d2c55;
+}
+.CULeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+}
+.CURight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.CURight a input {
+  margin-bottom: 0px;
+  height: 40px;
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  outline: none;
+}
+.CULeft a{
+  margin-bottom: 40px;
+}
+.CURight div textarea {
+  margin-top: 15px;
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  width: 300px;
+  border-style: solid;
+  border-color: lightgray;
+  outline: none;
+}
+.CUTOPLINE {
+  margin-top: 10px;
+  color: #1d2c55;
+}
+.HR {
+  height: 1px;
+  width: 75vw;
+  background-color: #1d2c55;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.sumit {
+  margin-top: 20px;
+}
+.CURight div button {
+  height: 40px;
+  background-color: whitesmoke; 
+  text-decoration: none;
+  border: none;
+  color: #1d2c55;
+  outline: none;
+}
+.CURight div button:hover {
+  background-color: lightgray;
+}
+.CURight div button:active {
+  background-color: gray;
+}

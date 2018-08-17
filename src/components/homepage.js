@@ -4,7 +4,7 @@ import Filter from './filter';
 import Navbar from './navbar';
 
 
-let fakeServerData = {
+let professor_list = {
     user: {
       name: "Mike",
       professors: [
@@ -52,7 +52,7 @@ let fakeServerData = {
          }
     }
     componentDidMount() {
-        this.setState({ serverData: fakeServerData });
+        this.setState({ serverData: professor_list });
     }
     render() {
       let professorToRender = this.state.serverData.user ? this.state.serverData.user.professors

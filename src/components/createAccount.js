@@ -28,28 +28,19 @@ class CreateAccount extends Component {
     return (
       <div className="form">
         <Navbar/>
-        <form>
-
-          <label>Name</label>
-          <input type="text" name="name" onChange={this.handleChange} />
-
-          <label>Phone</label>
-          <input type="text" name="phone" onChange={this.handleChange} />
-
-          <label>Username</label>
-          <input type="text" name="username" onChange={this.handleChange} />
-          
-          <label>Password</label>
-          <input type="password" name="password" onChange={this.handleChange} />
-
-          
-
+        <form className="wrapper">
+          <form className="form-inner">
+          <label>Create Account</label>
+          <input type="text" name="name" placeholder="Name" onChange={this.handleChange} />
+          <input type="text" name="phone" placeholder="Phone" onChange={this.handleChange} />
+          <input type="text" name="username" placeholder="Username" onChange={this.handleChange} />
+          <input type="password" name="password" placeholder="Password" onChange={this.handleChange} />
           <p>Don't have an account? Create an Account</p>
 
           <Link to="/results_reviews" className="brand">
             Create Account
           </Link>
-          
+          </form>
         </form>
 
       </div>

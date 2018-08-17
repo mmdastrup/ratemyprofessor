@@ -25,29 +25,29 @@ class Login extends Component {
   
   render () {
     return (
-      <div className="form">
-        <Navbar/>
-        <form>
+      <div className="form-container">
+       <Navbar/>
+       <div className="wrapper">
+         <form className="form-inner">
+         <label>Login</label>
+           <div className="form">
+             <input type="text" name="username" placeholder="Username"onChange={this.handleChange} />
+           </div>
+           <div className="form">
+             <input type="password" name="password" placeholder="Password" onChange={this.handleChange} />
+           </div>
+           <Link to="/" className="brand">
+             <button>Login</button>
+           </Link>
 
-          <label>Username</label>
-          <input type="text" name="username" onChange={this.handleChange} />
-          
-          <label>Password</label>
-          <input type="password" name="password" onChange={this.handleChange} />
+           <p>Don't have an account?</p>
+           <Link to="/createAccount" className="brand">
+             Create a free account
+           </Link>
 
-          <Link to="/" className="brand">
-            Submit
-          </Link>
-
-          
-          <p>Don't have an account?</p>
-          <Link to="/createAccount" className="brand">
-            Create a free account
-          </Link>
-          
-        </form>
-
-      </div>
+         </form>
+       </div>
+     </div>
     );
   }
 }
