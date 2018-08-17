@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import Navbar from './navbar';
 import SocialIcons from './socialIcons';
 import Logo from './logo_component';
+import SearchBar from './searchBar';
+import Highlights from './highlights';
 
 
 const professors = [
@@ -23,8 +25,10 @@ class Homepage extends Component {
         return (
             <div>
                 <Navbar/>
-                <SocialIcons/>
                 <Logo/>
+                <SearchBar/>
+                <SocialIcons/>
+                <Highlights/>
             </div>
         );
     }

@@ -1,16 +1,35 @@
 import React, { Component } from 'react';
 
 class SearchBar extends Component {
+    // state = {
+    //     query: '',
+    //     results: []
+    // }
+
+    // getInfo
+
+    // handleInputChange = () => {
+    //     this.setState({
+    //         query:this.search.value
+    //     })
+    // }
+    
     render() {
         return (
-            <div class="wrap">
-            <div class="search">
-               <input type="text" class="searchTerm" placeholder="Search by teacher or by school"/>
-               <button type="submit" class="searchButton"/>
-                 <i class="fa fa-search"></i>
-                <button/>
+            // <form>
+            //     <input
+            //         placeholder="search by teacher or by school"
+            //         ref={input => this.search = input}
+            //         onChange={this.handleInputChange}
+            //     />
+            //     <p>{this.state.query}</p>
+            // </form>
+            <div className="wrap">
+                <div className="search">
+                    <input type="text" className="searchTerm" placeholder="Search by teacher or by school"/>
+                    <button type="submit" className="searchButton">Search</button>
+                </div>
             </div>
-          </div>
         );
     }
 }
