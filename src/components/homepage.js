@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Navbar from './navbar';
+import SocialIcons from './socialIcons';
 
 class Homepage extends Component {
     render() {
         return (
             <div>
                 <Navbar/>
-                <h1>This is the homepage</h1>
+                <SocialIcons/>
             </div>
         );
     }
