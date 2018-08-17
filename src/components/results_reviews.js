@@ -6,6 +6,8 @@ export default class Results_reviews extends Component {
         return (
             <div>
                 <Navbar/>
+                <div>
+                <Navbar/>
                 <h1>This is the results and reviews page</h1>
                 <div className="sub-heading">
                     <div className="search-bar">
@@ -65,6 +67,7 @@ export default class Results_reviews extends Component {
                         Hey this is the results body
                     </div>
                 </div>
+            </div>
             </div>
         );
     }
