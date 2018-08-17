@@ -8,8 +8,8 @@ class Professor extends Component {
           <img />
           <h3>{professor.name}</h3>
           <ul>
-            {professor.songs.map(song =>
-              <li>{song.name}</li>
+            {professor.things.map(thing =>
+              <li>{thing.name}</li>
             )}
           </ul>
         </div>

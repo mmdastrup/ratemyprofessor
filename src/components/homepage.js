@@ -10,7 +10,7 @@ let fakeServerData = {
       professors: [
         {
           name: "Dr. Johnson",
-          songs: [
+          things: [
             { name: "English"},
             { name: "USU"},
             { name: "5 star rating"}
@@ -18,7 +18,7 @@ let fakeServerData = {
         },
         {
           name: "Dr. Thompson",
-          songs: [
+          things: [
             { name: "Math"},
             { name: "UVU"},
             { name: "2 star rating"}
@@ -26,7 +26,7 @@ let fakeServerData = {
         },
         {
           name: "Dr. Kelley",
-          songs: [
+          things: [
             { name: "Science"},
             { name: "BYU"},
             { name: "4 star rating"}
@@ -34,7 +34,7 @@ let fakeServerData = {
         },
         {
           name: "Dr. Larson",
-          songs: [
+          things: [
             { name: "Social Studies"},
             { name: "UofU"},
             { name: "3 star rating"}
