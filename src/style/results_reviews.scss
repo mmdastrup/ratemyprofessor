@@ -1,0 +1,150 @@
+.sub-heading {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.search-bar {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 90%;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+
+.search-bar input:hover {
+    transition: all .3s ease;
+    background-color: whitesmoke;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-bar input:active {
+    background-color: whitesmoke;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-media-icons i {
+    padding: 0px 15px 0px 15px;
+    font-size: 1.5em;
+}
+
+// .collapsible {
+//     background-color: #777;
+//     color: white;
+//     cursor: pointer;
+//     padding: 18px;
+//     width: 100%;
+//     border: none;
+//     text-align: left;
+//     outline: none;
+//     font-size: 15px;
+//  }
+ 
+//  .active, .collapsible:hover {
+//     background-color: #555;
+//  }
+ 
+//  .content {
+//     padding: 0 18px;
+//     display: none;
+//     overflow: hidden;
+//     background-color: #f1f1f1;
+//  }
+
+.results {
+    display: flex;
+    height: 730px;
+}
+
+.filter-wrapper {
+   background-color: whitesmoke;
+}
+
+.filter-dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.collapsible {
+    font-size: 1.25em;
+    padding: 10px;
+    height: 55px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px 0px 20px;
+}
+
+.filter ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.filter li {
+    display: flex;
+    justify-content: center;
+}
+
+.results-wrapper {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.results-title {
+    background-color: #415068;
+    color: white;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px 5px 5px 10px;
+}
+
+.results-title-name {
+    font-size: 1.5em;
+}
+
+.results-title-page {
+    font-size: 1em;
+}
+
+.results-body {
+    flex-grow: 1;
+}
+
+.professor-object {
+    display: block;
+    padding: 7px 22px 7px 32px;
+    border: 1px black solid;
+    background: linear-gradient(white, silver);
+  }
+  .professor-object:hover {
+    opacity: 0.6;
+  }
+
+  .footer {
+      background-color: #415068;
+      height: 100px;
+      color: white;
+  }
+
+  
