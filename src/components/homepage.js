@@ -1,29 +1,85 @@
 import React, { Component } from 'react';
+import Professor from './professor';
+import Filter from './filter';
 import Navbar from './navbar';
 
 
-const professors = [
-    {name: "Dr. Johnson", rating: 5, class:"Gym", school:"UVU"},
-    {name: "Dr. Nelson", rating: 4, class:"English", school:"BYU"},
-    {name: "Dr. Larson", rating: 5, class:"Health", school:"UofU"},
-    {name: "Dr. Kelley", rating: 2, class:"English", school:"Weber"},
-    {name: "Dr. Leek", rating: 5, class:"social studies", school:"Westminster"},
-    {name: "Dr. Allred", rating: 3, class:"English", school:"USU"},
-    {name: "Dr. Stehpens", rating: 5, class:"math", school:"Weber"},
-    {name: "Dr. Richards", rating: 2, class:"science", school:" BYU Idaho"},
-    {name: "Dr. Sturm", rating: 4, class:"English", school:"USU"},
-    {name: "Dr. Nickles", rating: 3, class:"math", school:"UVU"}
-]
-
-class Homepage extends Component {
-    render() {
-        return (
-            <div>
-                <Navbar/>
-                <h1>This is the homepage</h1>
-            </div>
-        );
+let fakeServerData = {
+    user: {
+      name: "Mike",
+      professors: [
+        {
+          name: "Dr. Johnson",
+          songs: [
+            { name: "English"},
+            { name: "USU"},
+            { name: "5 star rating"}
+          ]
+        },
+        {
+          name: "Dr. Thompson",
+          songs: [
+            { name: "Math"},
+            { name: "UVU"},
+            { name: "2 star rating"}
+          ]
+        },
+        {
+          name: "Dr. Kelley",
+          songs: [
+            { name: "Science"},
+            { name: "BYU"},
+            { name: "4 star rating"}
+          ]
+        },
+        {
+          name: "Dr. Larson",
+          songs: [
+            { name: "Social Studies"},
+            { name: "UofU"},
+            { name: "3 star rating"}
+          ]
+        }
+      ]
     }
-}
+  };
+  class Homepage extends Component {
+    constructor() {
+      super();
+      this.state = {
+         serverData: {},
+         filterString: ''
+         }
+    }
+    componentDidMount() {
+        this.setState({ serverData: fakeServerData });
+    }
+    render() {
+      let professorToRender = this.state.serverData.user ? this.state.serverData.user.professors
+        .filter(professor =>
+        professor.name.toLowerCase().includes(
+          this.state.filterString.toLowerCase())
+        ) : []
+      return (
+        <div className="homepage"> 
+            <Navbar/>
+          {this.state.serverData.user ? 
+            <div>
 
-export default Homepage;
+              
+              <Filter onTextChange={text => {
+                console.log(text);
+                this.setState({filterString: text})}
+              }/>
+              {professorToRender.map(professor =>
+                 <Professor professor={professor} /> 
+              )}
+            </div> : <h1>Page is loading</h1>
+          }
+        </div>
+      );
+    }
+  }
+  
+  export default Homepage;
+  
