@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 
 
-class Login extends Component {
+class CreateAccount extends Component {
 
   constructor () {
     super();
@@ -28,20 +28,24 @@ class Login extends Component {
         <Navbar/>
         <form>
 
+          <label>Name</label>
+          <input type="text" name="name" onChange={this.handleChange} />
+
+          <label>Phone</label>
+          <input type="text" name="phone" onChange={this.handleChange} />
+
           <label>Email</label>
           <input type="text" name="email" onChange={this.handleChange} />
           
           <label>Password</label>
           <input type="password" name="password" onChange={this.handleChange} />
 
-          <Link to="/" className="brand">
-            Submit
-          </Link>
-
           
-          <p>Don't have an account?</p>
-          <Link to="/createAccount" className="brand">
-            Create a free account
+
+          <p>Don't have an account? Create an Account</p>
+
+          <Link to="/results_reviews" className="brand">
+            Create Account
           </Link>
           
         </form>
@@ -51,4 +55,4 @@ class Login extends Component {
   }
 }
 
-export default Login;
+export default CreateAccount;

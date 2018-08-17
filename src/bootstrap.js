@@ -10,6 +10,7 @@ import Results_reviews from './components/results_reviews';
 import About from './components/about';
 import Login from './components/login';
 import Homepage from './components/homepage';
+import CreateAccount from './components/createAccount';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -27,6 +28,7 @@ function main() {
           <Route exact path="/about" component={About} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/homepage" component={Homepage} />
+          <Route exact path="/createAccount" component={CreateAccount} />
         </Switch>
       </BrowserRouter>
     </Provider>
