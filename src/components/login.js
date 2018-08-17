@@ -1,45 +1,42 @@
 import React, { Component } from "react";
 import Navbar from "./navbar";
+import { runInThisContext } from "vm";
 
 class Login extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            usernamevalue: '',
-            emailvalue: '',
-            passwordvalue: ''
-        }
-    
-        this.handleChange = this.handleChange.bind(this);
-      }
-    
-      handleChange(event) {
-        this.setState({
-          usernamevalue: event.target.usernamevalue,
-          emailvalue: event.target.emailvalue,
-          passwordvalue: event.target.passwordvalue
-        });
-      }
+  constructor () {
+    super();
+    this.state = {
+      name: '',
+      email: '',
+      password: ''
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+  
+  handleChange (evt) {
+    this.setState({ [evt.target.name]: evt.target.value });
+  }
 
-  render() {
+
+  
+  
+  render () {
     return (
-      <div>
-        <Navbar />
-        <form onSubmit={this.handleSubmit}>
-        <label>
-          userame:
-          </label>
-          <input name="username" type="text" onChange={this.handleChange} />
-        <label>
-          email:
-          </label>
-          <input name="email" type="text" onChange={this.handleChange} />
-        <label>
-          password:
-          </label>
-          <input name="password" type="password" onChange={this.handleChange} />
-      </form>
+      <div className="form">
+        <Navbar/>
+        <form>
+        
+          <label>Name</label>
+          <input type="text" name="name" onChange={this.handleChange} />
+
+          <label>Email</label>
+          <input type="text" name="email" onChange={this.handleChange} />
+          
+          <label>Password</label>
+          <input type="password" name="password" onChange={this.handleChange} />
+          
+        </form>
       </div>
     );
   }
