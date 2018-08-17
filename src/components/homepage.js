@@ -5,6 +5,7 @@ import SocialIcons from './socialIcons';
 import Logo from './logo_component';
 import SearchBar from './searchBar';
 import Highlights from './highlights';
+import Footer from './footer';
 
 
 const professors = [
@@ -29,6 +30,7 @@ class Homepage extends Component {
                 <SearchBar/>
                 <SocialIcons/>
                 <Highlights/>
+                <Footer/>
             </div>
         );
     }
