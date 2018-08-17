@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 class Navbar extends Component {
   constructor(props) {
     super(props)
+    username: {this.props.login}
 
   }
   render() {
@@ -26,7 +27,7 @@ class Navbar extends Component {
         </div>
         <div className="right">
           <Link to="/login" className="brand">
-            Login
+            {this.props.username} ? {this.props.username} : Login
           </Link>
         </div>
       </div>

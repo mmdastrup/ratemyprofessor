@@ -9,7 +9,7 @@ class Login extends Component {
   constructor () {
     super();
     this.state = {
-      email: '',
+      username: '',
       password: ''
     };
     this.handleChange = this.handleChange.bind(this);
@@ -17,6 +17,7 @@ class Login extends Component {
   
   handleChange (event) {
     this.setState({ [event.target.name]: event.target.value });
+    <Navbar {...event.target.name}/>
   }
 
 
@@ -28,8 +29,8 @@ class Login extends Component {
         <Navbar/>
         <form>
 
-          <label>Email</label>
-          <input type="text" name="email" onChange={this.handleChange} />
+          <label>Username</label>
+          <input type="text" name="username" onChange={this.handleChange} />
           
           <label>Password</label>
           <input type="password" name="password" onChange={this.handleChange} />

@@ -10,7 +10,9 @@ class CreateAccount extends Component {
     super();
     this.state = {
       email: '',
-      password: ''
+      password: '',
+      username: '',
+      phone: ''
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -34,8 +36,8 @@ class CreateAccount extends Component {
           <label>Phone</label>
           <input type="text" name="phone" onChange={this.handleChange} />
 
-          <label>Email</label>
-          <input type="text" name="email" onChange={this.handleChange} />
+          <label>Username</label>
+          <input type="text" name="username" onChange={this.handleChange} />
           
           <label>Password</label>
           <input type="password" name="password" onChange={this.handleChange} />
