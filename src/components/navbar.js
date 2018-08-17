@@ -9,26 +9,39 @@ class Navbar extends Component {
   }
   render() {
     return (
-      <div className="navbar">
-        <a href="#" className="toggle" id="navHamburger">
-          <i className="fas fa-bars" />
-        </a>
-        <Link to="/" className="brand">
-          Rate My Professor
-        </Link>
-        <div className="left">
-          <Link to="/results_reviews" className="brand">
-            Search Results
-          </Link>
-          <Link to="/about" className="brand">
-            About Us
-          </Link>
-        </div>
-        <div className="right">
-          <Link to="/login" className="brand">
-            Login
-          </Link>
-        </div>
+      <div className="container">
+
+        {/* <div className="navbar">
+          <a href="#" className="toggle" id="navHamburger">
+            <i className="fas fa-bars" />
+          </a> */}
+
+          <div className="navbarText">  
+            
+            <div className="left">
+              <Link to="/" className="brand">
+                  Home
+              </Link>
+              <Link to="/results_reviews" className="brand">
+                Write Reviews
+              </Link>
+              <Link to="/about" className="brand">
+                About Us
+              </Link>
+            </div>
+
+            <div className="right">
+              <Link to="/login" className="brand">
+                Login
+              </Link>
+              <Link to="/login" className="brand">
+                Sing Up
+              </Link>
+            </div>
+          </div>
+        {/* </div> */}
+        
+
       </div>
     );
   }

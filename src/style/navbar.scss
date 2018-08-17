@@ -1,12 +1,27 @@
 html {
     font-family: 'Oxygen', sans-serif;
 }
+
 body {
     margin: 0px;
+    max-width: 100%;
 }
-.navbar {
-    background: #415068;
+
+.container {
+    width: 100%;
+    background: url(images/TR_background.jpg);
+    background-size: 100% 100%;
+    // opacity: 0.65;
+    height: 650px;
 }
+
+.navbarText {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
 .navbar div {
     display: none;
 }
@@ -27,11 +42,11 @@ body {
     color: #223047;
     background: white;
 }
-.navbar .brand {
+.navbarText .brand {
     width: 10em;
     text-align: center;
     padding: 1em;
-    color: white;
+    color: black;
 }
 .navbar a {
     text-decoration: none;
@@ -40,39 +55,64 @@ body {
     padding: 1em;
     color: black;
 }
-@media (min-width: 48em) {
+
+@media (min-width: 1200px) {
+    .container { 
+        max-width: 100%;
+    }
+
     .navbar {
-        display: flex;
+        max-width: 100%;
     }
-    .navbar .left,
-    .navbar .right {
-        display: flex;
-        flex: 1;
-    }
-    .navbar .link {
-        width: auto;
-    }
-    .navbar .right {
-        justify-content: flex-end;
-    }
-    .navbar .toggle {
-        display: none;
-    }
-}
-@media (min-width: 48em) {
-    .navbar div {
+
+    .navbarText {
         display: flex;
     }
 }
-@media (max-width: 48em) {
-    .navbar.active .toggle {
-        background: #223047;
-        color: white;
-    }
-    .navbar .brand {
-        text-align: left;
-    }
-    .navbar.active div {
-        display: block;
-    }
-}
+
+// @media (min-width: 48em) {  
+//     .container {
+//         display: flex;
+//         justify-content: flex-start;
+//         width: 100%;
+//     }
+
+//     .navbar {
+//         width: 100vw;
+//         // display: flex;
+//         // align-items: flex-start;
+//     }
+
+//     .navbar .left,
+//     .navbar .right {
+//         display: flex;
+//         flex: 1;
+//     }
+    
+//     .navbar .link {
+//         width: auto;
+//     }
+//     .navbar .right {
+//         justify-content: flex-end;
+//     }
+//     .navbar .toggle {
+//         display: none;
+//     }
+// }
+// @media (min-width: 48em) {
+//     .navbar div {
+//         display: flex;
+//     }
+// }
+// @media (max-width: 48em) {
+//     .navbar.active .toggle {
+//         background: #223047;
+//         color: white;
+//     }
+//     .navbar .brand {
+//         text-align: left;
+//     }
+//     .navbar.active div {
+//         display: block;
+//     }
+// }
