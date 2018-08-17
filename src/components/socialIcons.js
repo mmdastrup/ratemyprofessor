@@ -4,7 +4,9 @@ class SocialIcons extends Component {
     render() {
         return (
             <div>
-                <span></span><span></span><span></span>
+                <span><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                <span><i class="fa fa-instagram" aria-hidden="true"></i></span>
+                <span><i class="fa fa-twitter" aria-hidden="true"></i></span>
             </div>
         );
     }
