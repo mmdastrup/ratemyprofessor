@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+
 import Navbar from './navbar';
 import SocialIcons from './socialIcons';
+import Logo from './logo_component';
 
 
 const professors = [
@@ -22,6 +24,7 @@ class Homepage extends Component {
             <div>
                 <Navbar/>
                 <SocialIcons/>
+                <Logo/>
             </div>
         );
     }
