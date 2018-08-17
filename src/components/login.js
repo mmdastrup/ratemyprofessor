@@ -6,46 +6,39 @@ class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: '',
+            usernamevalue: '',
             emailvalue: '',
             passwordvalue: ''
         }
     
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
       }
     
       handleChange(event) {
-        this.setState({value: event.target.value});
-      }
-
-
-      handleSubmit(event) {
-        console.log(this.state.value)
-        event.preventDefault();
+        this.setState({
+          usernamevalue: event.target.usernamevalue,
+          emailvalue: event.target.emailvalue,
+          passwordvalue: event.target.passwordvalue
+        });
       }
 
   render() {
     return (
       <div>
         <Navbar />
-        <h1>This is the login page</h1>
         <form onSubmit={this.handleSubmit}>
         <label>
           userame:
-          <input name="username" type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
+          </label>
+          <input name="username" type="text" onChange={this.handleChange} />
         <label>
           email:
-          <input name="email" type="text" value={this.state.emailvalue} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
+          </label>
+          <input name="email" type="text" onChange={this.handleChange} />
         <label>
           password:
-          <input name="password" type="text" value={this.state.passwordvalue} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="Submit" />
+          </label>
+          <input name="password" type="password" onChange={this.handleChange} />
       </form>
       </div>
     );
