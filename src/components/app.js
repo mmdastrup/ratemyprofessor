@@ -15,6 +15,7 @@ export default class App extends Component {
         <img src="TeacherRater.png"/>
         <Logo/>
         <Logo/>
+        <what what what yo/>
         <SocialIcons/>
         <Highlights/>
         <Footer/>
